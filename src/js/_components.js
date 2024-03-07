@@ -1,15 +1,14 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation, Pagination } from '../resources/plugins/swiper/swiper-bundle.min.js';
 
 // Подключение свайпера
-const reviewsSlider = new Swiper('.reviews__slider', {
-  modules: [Navigation, Pagination],
+const reviewsSlider = new Swiper('.reviews__swiper', {
   slidesPerView: 1,
   navigation: {
-    nextEl: '.js--reviewsArrowRight',
-    prevEl: '.js--reviewsArrowLeft',
+    nextEl: '.js--reviewsArrowNext',
+    prevEl: '.js--reviewsArrowPrev',
   },
-  pagination: {
-    el: '.js--reviewsPagination',
-    clickable: true,
-  },
+  // pagination: {
+  //   el: '.js--reviewsPagination',
+  //   clickable: true,
+  // },
 });

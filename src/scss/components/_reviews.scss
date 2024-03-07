@@ -1,0 +1,46 @@
+.reviews {
+  &__slider {
+    border-radius: 20px;
+    padding: 45px;
+    background-color: #f4f4f4;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__img {
+    display: block;
+    overflow: hidden;
+    margin: 0 auto 35px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+
+  &__cite {
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    font-family: var(--title-font);
+    font-weight: 700;
+    font-size: 25px;
+  }
+
+  &__author {
+    margin-bottom: 21px;
+  }
+
+  &__authorName {
+    display: block;
+    font-family: var(--title-font);
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  &__authorJob {
+    display: block;
+    letter-spacing: 0.48px;
+  }
+}

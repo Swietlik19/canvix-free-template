@@ -110,3 +110,50 @@ a {
 .accent-color {
   color: var(--accent-color);
 }
+
+.swiper-btns {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  border: 1px solid var(--dark-color);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: var(--dark-color);
+  transition: background-color 0.3s;
+
+  &::after {
+    content: none;
+  }
+
+  &:hover {
+    background-color: var(--light-color);
+
+    .swiper-button-icon {
+      stroke: var(--dark-color);
+    }
+  }
+}
+
+.swiper-button-icon {
+  display: block;
+  width: 8px;
+  height: 15px;
+  fill: none;
+  stroke: #fbfbfb;
+  stroke-width: 1.55439;
+  transition: stroke 0.3s;
+}
+
+.swiper-button-prev {
+  transform: rotate(180deg);
+}

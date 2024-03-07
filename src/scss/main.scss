@@ -1,3 +1,4 @@
+@import "../resources/plugins/swiper/swiper-bundle.min";
 @import "vars";
 @import "mixins";
 @import "fonts";
@@ -12,3 +13,6 @@
 @import "./components/hero";
 @import "./components/services";
 @import "./components/about";
+@import "./components/process";
+@import "./components/showcases";
+@import "./components/reviews";

@@ -1,0 +1,54 @@
+.process {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+  }
+
+  &__item {
+    position: relative;
+    z-index: 1;
+    padding: 0 0 34px 40px;
+    transition: transform 0.4s ease-in-out;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    z-index: -1;
+    width: 100%;
+    height: calc(100% - 43px);
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 34px;
+    padding-left: 23px;
+    gap: 30px;
+  }
+
+  &__img {
+    display: block;
+    width: 82px;
+    height: 82px;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: var(--title-font);
+    font-weight: 600;
+    font-size: 30.174px;
+  }
+
+  &__text {
+    margin: 0;
+    max-width: 200px;
+    letter-spacing: 0.48px;
+  }
+}
