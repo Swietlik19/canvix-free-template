@@ -1,0 +1,17 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "DMSans", sans-serif;
+  --content-width: 1400px;
+  --container-offset: 20px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --light-color: #fbfbfb;
+  --dark-color: #0c0c0c;
+  --accent-color: #64ccc5;
+
+  // fonts
+  --title-font: "RobotoSerif", serif;
+}

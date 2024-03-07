@@ -1,0 +1,17 @@
+.header {
+  position: fixed;
+  z-index: 50;
+  padding: 22px 0;
+  width: 100%;
+  transition: background-color 0.3s, box-shadow 0.3s;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &.fixed {
+    box-shadow: 0 0 10px rgba(var(--dark-color), 0.3);
+    background-color: var(--dark-color);
+  }
+}

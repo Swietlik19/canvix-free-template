@@ -1,0 +1,20 @@
+.nums {
+  display: flex;
+  padding-top: 10px;
+  gap: 60px;
+
+  &__num {
+    display: block;
+    margin-bottom: 9px;
+    font-family: var(--title-font);
+    font-weight: 600;
+    font-size: 45px;
+    color: var(--accent-color);
+  }
+
+  &__text {
+    font-size: 16px;
+    letter-spacing: 0.48px;
+    color: var(--light-color);
+  }
+}

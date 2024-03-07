@@ -1,0 +1,42 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 900px;
+  background: #000 url("../img/hero-bg.jpg") no-repeat left center;
+  background-size: cover;
+
+  &::before {
+    content: "";
+    width: 183px;
+    height: 192px;
+    background: transparent url("../img/ornament.png") no-repeat center center;
+    background-size: contain;
+    transform: rotate(90.17deg);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 160px;
+    padding-bottom: 50px;
+  }
+
+  &__title {
+    margin: 0 0 24px;
+    max-width: 649px;
+    font-family: var(--title-font);
+    font-weight: 600;
+    font-size: 64px;
+  }
+
+  &__desc {
+    margin: 0 0 32px;
+    max-width: 557px;
+  }
+
+  &__brands {
+    padding-top: 181px;
+  }
+}

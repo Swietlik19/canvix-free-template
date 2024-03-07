@@ -1,0 +1,24 @@
+.about {
+  &__cols {
+    display: flex;
+    gap: 70px;
+  }
+
+  &__img {
+    flex-grow: 1;
+  }
+
+  &__content {
+    flex-shrink: 0;
+    padding-top: 63px;
+    max-width: 586px;
+  }
+
+  &__title {
+    margin: 0 0 25px;
+  }
+
+  &__nums {
+    margin-bottom: 32px;
+  }
+}

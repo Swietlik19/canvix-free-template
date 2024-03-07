@@ -1,0 +1,19 @@
+.brands {
+  &__title {
+    margin-bottom: 5px;
+    font-family: var(--title-font);
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--accent-color);
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__img {
+    display: block;
+  }
+}

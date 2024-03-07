@@ -1,0 +1,42 @@
+.pageSection {
+  padding: 100px 0;
+
+  &__title {
+    margin: 0 auto 80px;
+    max-width: 740px;
+    font-family: var(--title-font);
+    font-weight: 600;
+    font-size: 64px;
+    text-align: center;
+    color: var(--dark-color);
+
+    &--left {
+      text-align: left;
+    }
+  }
+
+  &__desc {
+    font-size: 18px;
+    letter-spacing: 0.54px;
+  }
+
+  &__small {
+    display: block;
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--accent-color);
+  }
+
+  &--dark {
+    background-color: var(--dark-color);
+
+    .pageSection__title {
+      color: var(--light-color);
+    }
+
+    .pageSection__desc {
+      color: var(--light-color);
+    }
+  }
+}
