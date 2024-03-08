@@ -29,11 +29,13 @@
     font-family: var(--title-font);
     font-weight: 600;
     font-size: 64px;
+    color: var(--light-color);
   }
 
   &__desc {
     margin: 0 0 32px;
     max-width: 557px;
+    color: var(--light-color);
   }
 
   &__brands {

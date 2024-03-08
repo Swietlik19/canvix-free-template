@@ -1,6 +1,6 @@
 import Swiper, { Navigation, Pagination } from '../resources/plugins/swiper/swiper-bundle.min.js';
 
-// Подключение свайпера
+// Swiper
 const reviewsSlider = new Swiper('.reviews__swiper', {
   slidesPerView: 1,
   navigation: {

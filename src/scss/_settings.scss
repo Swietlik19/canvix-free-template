@@ -56,6 +56,7 @@ a {
 .input-reset {
   -webkit-appearance: none;
   appearance: none;
+  outline: none;
   border: none;
   border-radius: 0;
   background-color: #fff;
@@ -124,7 +125,7 @@ a {
   align-items: center;
   justify-content: center;
   margin: 0;
-  border: 1px solid var(--dark-color);
+  border: 2px solid var(--dark-color);
   border-radius: 50%;
   width: 44px;
   height: 44px;
@@ -151,7 +152,6 @@ a {
   fill: none;
   stroke: #fbfbfb;
   stroke-width: 1.55439;
-  transition: stroke 0.3s;
 }
 
 .swiper-button-prev {

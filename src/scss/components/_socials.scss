@@ -1,0 +1,34 @@
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 29px;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--light-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--light-color);
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: var(--dark-color);
+
+      .socials__icon {
+        stroke: var(--light-color);
+      }
+    }
+  }
+
+  &__icon {
+    width: 23px;
+    height: 23px;
+    fill: none;
+    stroke: var(--dark-color);
+    stroke-width: 1.375;
+  }
+}
