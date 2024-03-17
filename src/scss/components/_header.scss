@@ -7,11 +7,31 @@
 
   &__nav {
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
 
-  &.fixed {
+  &__burger {
+    display: none;
+
+    @include small-tablet {
+      display: block;
+      margin-left: 20px;
+    }
+  }
+
+  &__logo {
+    @include small-tablet {
+      margin-right: auto;
+    }
+  }
+
+  &--fixed {
     box-shadow: 0 0 10px rgba(var(--dark-color), 0.3);
     background-color: var(--dark-color);
+  }
+
+  @include big-desktop {
+    padding: 16px 0;
   }
 }

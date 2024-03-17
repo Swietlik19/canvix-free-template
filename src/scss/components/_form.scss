@@ -29,10 +29,18 @@
       font-size: 18px;
       letter-spacing: 0.54px;
       color: var(--dark-color);
+
+      @include mobile {
+        font-size: 14px;
+      }
     }
 
     &:hover {
       background-color: var(--accent-color);
+    }
+
+    @include mobile {
+      font-size: 16px;
     }
   }
 }

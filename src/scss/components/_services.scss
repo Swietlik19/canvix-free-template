@@ -3,6 +3,18 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 66px 80px;
+
+    @include big-desktop {
+      gap: 40px;
+    }
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile {
+      gap: 10px;
+    }
   }
 
   &__item {
@@ -24,6 +36,14 @@
         stroke: var(--dark-color);
       }
     }
+
+    @include big-desktop {
+      padding: 35px;
+    }
+
+    @include mobile {
+      padding: 10px;
+    }
   }
 
   &__img {
@@ -36,6 +56,16 @@
     height: 80px;
     background-color: #000;
     transition: background-color 0.3s;
+
+    @include big-desktop {
+      margin-bottom: 32px;
+    }
+
+    @include mobile {
+      margin-bottom: 20px;
+      width: 60px;
+      height: 60px;
+    }
   }
 
   &__icon {
@@ -46,6 +76,11 @@
     stroke: var(--light-color);
     stroke-width: 1.65;
     transition: stroke 0.3s;
+
+    @include mobile {
+      width: 25px;
+      height: 25px;
+    }
   }
 
   &__title {
@@ -53,6 +88,14 @@
     font-family: var(--title-font);
     font-weight: 500;
     font-size: 25px;
+
+    @include big-desktop {
+      font-size: 23px;
+    }
+
+    @include mobile {
+      font-size: 17px;
+    }
   }
 
   &__text {
@@ -60,5 +103,13 @@
     max-width: 332px;
     font-size: 18px;
     letter-spacing: 0.54px;
+
+    @include big-desktop {
+      font-size: 16px;
+    }
+
+    @include mobile {
+      font-size: 13px;
+    }
   }
 }

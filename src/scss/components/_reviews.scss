@@ -3,6 +3,10 @@
     border-radius: 20px;
     padding: 45px;
     background-color: #f4f4f4;
+
+    @include small-tablet {
+      padding: 30px;
+    }
   }
 
   &__item {
@@ -16,16 +20,25 @@
     border-radius: 50%;
     width: 150px;
     height: 150px;
+
+    @include mobile {
+      width: 100px;
+      height: 100px;
+    }
   }
 
   &__cite {
-    margin-bottom: 35px;
+    margin: 0 0 35px;
   }
 
   &__text {
     font-family: var(--title-font);
     font-weight: 700;
     font-size: 25px;
+
+    @include mobile {
+      font-size: 21px;
+    }
   }
 
   &__author {

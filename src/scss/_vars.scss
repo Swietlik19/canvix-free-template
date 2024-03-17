@@ -4,8 +4,10 @@
   // base
   --font-family: "DMSans", sans-serif;
   --content-width: 1400px;
-  --container-offset: 20px;
+  --container-offset: 40px;
+  --container-offset-mobile: 20px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-width-mobile: calc(var(--content-width) + (var(--container-offset-mobile) * 2));
 
   // colors
   --light-color: #fbfbfb;

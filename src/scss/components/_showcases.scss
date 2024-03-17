@@ -7,12 +7,29 @@
     position: absolute;
     right: 0;
     top: 74px;
+
+    @include small-tablet {
+      top: 0;
+    }
+
+    @include mobile {
+      position: static;
+      margin-bottom: 20px;
+    }
   }
 
   &__list {
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
+
+    @include tablet {
+      gap: 42px;
+    }
+
+    @include small-tablet {
+      gap: 30px;
+    }
   }
 
   &__item {
@@ -20,10 +37,38 @@
 
     &:nth-child(2) {
       margin-top: 173px;
+
+      @include small-tablet {
+        margin-top: 63px;
+      }
+
+      @include mobile {
+        margin-top: 0;
+      }
     }
 
     &:nth-child(3) {
       margin-top: -173px;
+
+      @include small-tablet {
+        margin-top: -63px;
+      }
+
+      @include mobile {
+        margin-top: 0;
+      }
+    }
+
+    @include tablet {
+      width: calc(50% - 21px);
+    }
+
+    @include small-tablet {
+      width: calc(50% - 15px);
+    }
+
+    @include mobile {
+      width: 100%;
     }
   }
 
@@ -38,13 +83,13 @@
     &::after {
       content: "";
       position: absolute;
-      left: 50%;
-      top: 50%;
       display: block;
       transform: translate(-50%, -50%);
     }
 
     &::before {
+      left: 50%;
+      top: 50%;
       width: 100%;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.3);
@@ -53,6 +98,8 @@
     }
 
     &::after {
+      left: calc(50% - 25px);
+      top: calc(50% - 25px);
       width: 50px;
       height: 50px;
       background: transparent url("../img/arrow-video.svg") no-repeat center center;
@@ -92,10 +139,18 @@
     &:hover {
       color: var(--accent-color);
     }
+
+    @include small-tablet {
+      font-size: 21px;
+    }
   }
 
   &__text {
     font-size: 18px;
     letter-spacing: 0.54px;
+
+    @include small-tablet {
+      font-size: 16px;
+    }
   }
 }

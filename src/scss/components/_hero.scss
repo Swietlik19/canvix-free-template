@@ -21,14 +21,15 @@
     justify-content: center;
     padding-top: 160px;
     padding-bottom: 50px;
+
+    @include tablet {
+      padding-top: 100px;
+    }
   }
 
   &__title {
     margin: 0 0 24px;
     max-width: 649px;
-    font-family: var(--title-font);
-    font-weight: 600;
-    font-size: 64px;
     color: var(--light-color);
   }
 
@@ -40,5 +41,22 @@
 
   &__brands {
     padding-top: 181px;
+
+    @include big-desktop {
+      padding-top: 61px;
+    }
+  }
+
+  @include big-desktop {
+    min-height: 760px;
+  }
+
+  @include tablet {
+    height: auto;
+    min-height: 0;
+  }
+
+  @include small-tablet {
+    background-image: none;
   }
 }
